@@ -1,23 +1,23 @@
-Feature: Title of your feature
-  I want to use this template for my feature file
-
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
-
-    Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+Feature: Desafio Tecnico QE
+  As an user
+  I want fill the form from tricentis page
+  So that the Desafio Tecnico will be completed
+ 
+ Scenario: Fill the tricentis form
+  Given I access the tricentis page
+  Then the "Vehicle Data" page must be shown
+  When I fill the "Vehicle Data" form
+  And I press Next button  
+  Then the "Insurant Data" page must be shown
+  When I fill the "Insurant Data" form
+  And I press Next button
+  Then the "Product Data" page must be shown
+	When I fill the "Product Data" form
+	And I press Next button
+	Then the "Price Option" page must be shown
+	When I fill the "Price Option" form
+	And I press Next button
+	Then the "Send Quote" page must be shown  
+	When I fill the "Send Quote" form
+	And I press Send button
+	Then a success message must be displayed in the page  
