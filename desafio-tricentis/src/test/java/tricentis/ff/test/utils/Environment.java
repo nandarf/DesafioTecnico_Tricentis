@@ -22,6 +22,6 @@ public class Environment {
 
 	public void exitTricentis(WebDriver driver) {
 		this.webDriver = driver;
-		//webDriver.quit();
+		webDriver.quit();
 	}
 }
