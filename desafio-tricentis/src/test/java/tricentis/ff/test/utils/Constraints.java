@@ -7,4 +7,6 @@ public class Constraints {
 	public String PRODUCT_PAGE = "Product Data";
 	public String PRICE_PAGE = "Price Option";
 	public String SEND_QUOTE_PAGE = "Send Quote";
+	public String NEXT_BUTTON = "Next";
+	public String SEND_BUTTON = "Send";	
 }

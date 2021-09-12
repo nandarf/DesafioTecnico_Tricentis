@@ -11,6 +11,7 @@ public class Environment {
 	public WebDriver browse() {
 		System.setProperty("webdriver.chrome.driver", "dependencies/chromedriver.exe");
 		webDriver = new ChromeDriver();
+		webDriver.manage().window().maximize();
 		return webDriver;
 	}
 
@@ -21,6 +22,6 @@ public class Environment {
 
 	public void exitTricentis(WebDriver driver) {
 		this.webDriver = driver;
-		webDriver.quit();
+		//webDriver.quit();
 	}
 }
