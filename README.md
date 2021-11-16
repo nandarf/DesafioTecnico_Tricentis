@@ -1,5 +1,5 @@
 # DesafioTecnico_Tricentis
-Desafio Técnico - QE - Automation 
+Desafio Técnico Accenture Tricentis - QE - Automation 
 
 --------------------------------------
 
